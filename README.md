@@ -10,7 +10,7 @@ Look at Description.ipynb for the general description of the algorithm.
 ### Basic algorithm description
 The Dictionary Learning problem is concerned with
 
-<img src="https://render.githubusercontent.com/render/math?math=\min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 + ~ \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j"> 
+<img src="https://render.githubusercontent.com/render/math?math=\min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 \+ ~ \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j"> 
 
 where <img src="https://render.githubusercontent.com/render/math?math=g(\gamma_i)"> is a spase-enforcing penalty term such as the <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> norm or the <img src="https://render.githubusercontent.com/render/math?math=\ell_0"> pseudo-norm. Both will be considered in this implementation. 
 
