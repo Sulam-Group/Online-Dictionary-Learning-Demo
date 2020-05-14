@@ -9,10 +9,12 @@ Look at Description.ipynb for the general description of the algorithm.
 
 ### Basic algorithm description
 The Dictionary Learning problem is concerned with
-<img src="https://render.githubusercontent.com/render/math?math=\min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 + \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j"> 
-where $$g(\gamma_i)$$ is a spase-enforcing penalty term such as the $\ell_1$ norm or the $\ell_0$ pseudo-norm. Both will be considered in this implementation. 
 
-Note that the sum of the reconstruction error per sample can be denoted in matrix form as $\|Y - D\Gamma\|^2_F$, where matrices $Y$ and $\Gamma$ have the vectors $y_i$ and $\gamma_i$ in their columns, respectively.
+<img src="https://render.githubusercontent.com/render/math?math=\min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 + \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j"> 
+
+where <img src="https://render.githubusercontent.com/render/math?math=g(\gamma_i)"> is a spase-enforcing penalty term such as the <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> norm or the <img src="https://render.githubusercontent.com/render/math?math=\ell_0"> pseudo-norm. Both will be considered in this implementation. 
+
+Note that the sum of the reconstruction error per sample can be denoted in matrix form as <img src="https://render.githubusercontent.com/render/math?math=\|Y - D\Gamma\|^2_F">, where matrices <img src="https://render.githubusercontent.com/render/math?math=Y"> and <img src="https://render.githubusercontent.com/render/math?math=Gamma"> have the vectors <img src="https://render.githubusercontent.com/render/math?math=y_i"> and <img src="https://render.githubusercontent.com/render/math?math=\gamma_i"> in their columns, respectively.
 
 Most dictionary learning methods employ an alternating minimization approach to address the above non-convex problem, by alternating between:
 * Minimizing the objective w.r.t. $\gamma_i$ while keeping the dictionary fixed, termed **Sparse Coding**, and
