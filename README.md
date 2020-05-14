@@ -9,10 +9,8 @@ Look at Description.ipynb for the general description of the algorithm.
 
 ### Basic algorithm description
 The Dictionary Learning problem is concerned with
-\begin{equation}
-\min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 + \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j
-\end{equation}
-where $g(\gamma_i)$ is a spase-enforcing penalty term such as the $\ell_1$ norm or the $\ell_0$ pseudo-norm. Both will be considered in this implementation. 
+\[ \min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 + \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j \]
+where $$g(\gamma_i)$$ is a spase-enforcing penalty term such as the $\ell_1$ norm or the $\ell_0$ pseudo-norm. Both will be considered in this implementation. 
 
 Note that the sum of the reconstruction error per sample can be denoted in matrix form as $\|Y - D\Gamma\|^2_F$, where matrices $Y$ and $\Gamma$ have the vectors $y_i$ and $\gamma_i$ in their columns, respectively.
 
