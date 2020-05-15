@@ -10,7 +10,7 @@ Look at Description.ipynb for the general description of the algorithm.
 ### Basic algorithm description
 The Dictionary Learning problem is concerned with
 
-<img src="https://render.githubusercontent.com/render/math?math=\min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 \+ ~ \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j"> 
+![\min_{\gamma_i,D} \sum_{i=1}^N \|y_i - D\gamma_i\|_2^2 \+ \lambda\ g(\gamma_i), \quad s.t. \quad \ \|d_j\|_2 = 1, \forall j](https://render.githubusercontent.com/render/math?math=%5Cmin_%7B%5Cgamma_i%2CD%7D%20%5Csum_%7Bi%3D1%7D%5EN%20%5C%7Cy_i%20-%20D%5Cgamma_i%5C%7C_2%5E2%20%5C%2B%20~%20%5Clambda%5C%20g(%5Cgamma_i)%2C%20%5Cquad%20s.t.%20%5Cquad%20%5C%20%5C%7Cd_j%5C%7C_2%20%3D%201%2C%20%5Cforall%20j)
 
 where <img src="https://render.githubusercontent.com/render/math?math=g(\gamma_i)"> is a spase-enforcing penalty term such as the <img src="https://render.githubusercontent.com/render/math?math=\ell_1"> norm or the <img src="https://render.githubusercontent.com/render/math?math=\ell_0"> pseudo-norm. Both will be considered in this implementation. 
 
